@@ -59,30 +59,59 @@ Legal Document → Text Extraction → Clause Segmentation → NLP Preprocessing
 
 ```bash id="hlxzj9"
 Legal-Risk-Detection-System/
+│── app.py                     # Main Streamlit application
+│── legal_report.html          # Generated legal report
+│── report.html                # Additional report output
+│── requirements.txt           # Project dependencies
+│── README.md                  # Project documentation
+│── .gitignore
+│── LICENSE
 │
-├── app.py
-├── requirements.txt
-├── README.md
+├── data/                      # Dataset files
 │
-├── models/
+├── models/                    # Trained ML models
+│   ├── category_model.pkl
+│   ├── risk_model.pkl
+│   └── vectorizer.pkl
 │
-├── dataset/
+├── src/                       # Core source code
+│   ├── __init__.py
+│   ├── agreement_analyzer.py  # Legal agreement analysis logic
+│   ├── clause_splitter.py     # Splits agreements into clauses
+│   ├── generate_dataset.py    # Dataset generation script
+│   ├── merge_dataset.py       # Dataset merging script
+│   ├── predict.py             # Risk/category prediction logic
+│   ├── preprocess.py          # Text preprocessing
+│   └── train_model.py         # Model training pipeline
 │
-├── utils/
-│   ├── clause_extractor.py
-│   ├── preprocessing.py
-│   ├── risk_predictor.py
-│   ├── classifier.py
-│   └── explanation_engine.py
-│
-└── assets/
+└── venv/                      # Virtual environment (not uploaded to GitHub)
 ```
 
 ---
 
 ## 📸 Screenshots
+## Homepage
+<img width="1903" height="1004" alt="homepage_Legal" src="https://github.com/user-attachments/assets/4d9f9e6d-b344-486b-9d25-759fb1edfb15" />
 
-*Add screenshots here*
+## Risk analysis
+<img width="1919" height="882" alt="risk_analysis" src="https://github.com/user-attachments/assets/f6e0cc8c-eb60-4af7-8a2a-cae253ded6e3" />
+
+## Risky clauses
+<img width="1360" height="926" alt="risky_clauses" src="https://github.com/user-attachments/assets/68240a6a-849e-4dcf-94e9-2ea4418b0a99" />
+
+## Dashboard
+<img width="1360" height="926" alt="risky_clauses" src="https://github.com/user-attachments/assets/e5d33bb5-bc1e-4513-a9a0-75a43dd6fe48" />
+
+
+## category table
+<img width="1899" height="991" alt="category_table" src="https://github.com/user-attachments/assets/d5d39217-e5db-49f8-bfbd-d2826ed89e4a" />
+
+
+
+
+
+
+
 
 ---
 
